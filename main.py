@@ -2,6 +2,9 @@ import yfinance as yf
 import pandas as pd
 import requests
 import os
+
+BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 ALERT_FILE = "alerts_sent.txt"
 
 if os.path.exists(ALERT_FILE):
@@ -10,8 +13,6 @@ if os.path.exists(ALERT_FILE):
 else:
     sent_alerts = set()
 
-BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
-CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
 def send_telegram(message):
     if not BOT_TOKEN or not CHAT_ID:
@@ -25,6 +26,8 @@ def send_telegram(message):
 with open("tickers.txt", "r") as f:
     tickers = [line.strip() for line in f.readlines() if line.strip()]
 
+new_alerts = []
+all_setups = []
 
 for ticker in tickers:
     print(f"\nControllo {ticker}")
@@ -48,7 +51,6 @@ for ticker in tickers:
         df["MA150"] = df["Close"].rolling(150).mean()
         df["VOL20"] = df["Volume"].rolling(20).mean()
         df["RelVol"] = df["Volume"] / df["VOL20"]
-
         df["High20"] = df["High"].rolling(20).max().shift(1)
         df["Low20"] = df["Low"].rolling(20).min().shift(1)
 
@@ -67,19 +69,13 @@ for ticker in tickers:
         prev_ma150 = float(previous["MA150"])
 
         signals = []
+        score = 0
 
         bullish_trend = close > ma50 > ma150
         bearish_trend = close < ma50 < ma150
 
-        new_bullish_trend = (
-            close > ma50 > ma150 and
-            not (prev_close > prev_ma50 > prev_ma150)
-        )
-
-        new_bearish_trend = (
-            close < ma50 < ma150 and
-            not (prev_close < prev_ma50 < prev_ma150)
-        )
+        new_bullish_trend = bullish_trend and not (prev_close > prev_ma50 > prev_ma150)
+        new_bearish_trend = bearish_trend and not (prev_close < prev_ma50 < prev_ma150)
 
         breakout_20d = close > high20 and relvol > 1.5
         breakdown_20d = close < low20 and relvol > 1.5
@@ -90,60 +86,99 @@ for ticker in tickers:
         golden_cross = previous["MA50"] <= previous["MA150"] and latest["MA50"] > latest["MA150"]
         death_cross = previous["MA50"] >= previous["MA150"] and latest["MA50"] < latest["MA150"]
 
-        print(f"Prezzo: {close:.2f}")
-        print(f"MA50: {ma50:.2f}")
-        print(f"MA150: {ma150:.2f}")
-        print(f"Relative Volume: {relvol:.2f}")
-        print(f"High20 precedente: {high20:.2f}")
-        print(f"Low20 precedente: {low20:.2f}")
-
-        if new_bullish_trend:
-            signals.append("🟢 Nuovo trend rialzista")
-
-        if new_bearish_trend:
-            signals.append("🔴 Nuovo trend ribassista")
-
-        if golden_cross:
-            signals.append("✨ Golden Cross MA50 > MA150")
-
-        if death_cross:
-            signals.append("⚠️ Death Cross MA50 < MA150")
+        if bullish_trend:
+            score += 2
 
         if breakout_20d:
             signals.append("🚀 Breakout 20 giorni con volume")
+            score += 4
+
+        if volume_spike:
+            signals.append("🔥 Volume anomalo > 2x")
+            score += 3
+
+        if strong_volume_spike:
+            signals.append("🔥🔥 Volume molto anomalo > 3x")
+            score += 2
+
+        if new_bullish_trend:
+            signals.append("🟢 Nuovo trend rialzista")
+            score += 3
+
+        if golden_cross:
+            signals.append("✨ Golden Cross MA50 > MA150")
+            score += 3
+
+        if new_bearish_trend:
+            signals.append("🔴 Nuovo trend ribassista")
+            score -= 3
+
+        if death_cross:
+            signals.append("⚠️ Death Cross MA50 < MA150")
+            score -= 3
 
         if breakdown_20d:
             signals.append("📉 Breakdown 20 giorni con volume")
+            score -= 4
 
-        if strong_volume_spike:
-            signals.append("🔥 Volume molto anomalo > 3x")
-        elif volume_spike:
-            signals.append("🔥 Volume anomalo > 2x")
+        distance_ma50 = ((close - ma50) / ma50) * 100
+        score += min(max(distance_ma50 / 5, -3), 3)
+
+        setup = {
+            "ticker": ticker,
+            "price": close,
+            "ma50": ma50,
+            "ma150": ma150,
+            "relvol": relvol,
+            "score": round(score, 1),
+            "signals": signals
+        }
+
+        all_setups.append(setup)
 
         if signals:
-
             alert_id = f"{ticker}-{'-'.join(signals)}"
 
-            if alert_id in sent_alerts:
-                print("Alert già inviato")
-                continue
-            message = (
-                f"📊 {ticker}\n\n"
-                + "\n".join(signals)
-                + f"\n\nPrezzo: {close:.2f}"
-                + f"\nMA50: {ma50:.2f}"
-                + f"\nMA150: {ma150:.2f}"
-                + f"\nRelative Volume: {relvol:.2f}"
-            )
+            if alert_id not in sent_alerts:
+                new_alerts.append(setup)
+                sent_alerts.add(alert_id)
 
-            print(message)
-            send_telegram(message)
-            sent_alerts.add(alert_id)
+                with open(ALERT_FILE, "a") as f:
+                    f.write(alert_id + "\n")
 
-            with open(ALERT_FILE, "a") as f:
-               f.write(alert_id + "\n")
-        else:
-            print("Nessun alert smart")
+            else:
+                print(f"{ticker}: alert già inviato")
+
+        print(f"{ticker} score: {score:.1f}")
 
     except Exception as e:
         print(f"Errore su {ticker}: {e}")
+
+
+new_alerts = sorted(new_alerts, key=lambda x: x["score"], reverse=True)
+top_setups = sorted(all_setups, key=lambda x: x["score"], reverse=True)[:5]
+
+if new_alerts:
+    message = "📊 DAILY SMART ALERTS\n\n"
+
+    message += "🚨 Nuovi segnali:\n"
+    for item in new_alerts:
+        message += (
+            f"\n{item['ticker']} | Score: {item['score']}\n"
+            + "\n".join(item["signals"])
+            + f"\nPrezzo: {item['price']:.2f}"
+            + f"\nRelVol: {item['relvol']:.2f}\n"
+        )
+
+    message += "\n\n🏆 Top setup watchlist:\n"
+    for i, item in enumerate(top_setups, start=1):
+        message += (
+            f"\n{i}. {item['ticker']} | Score: {item['score']}"
+            f" | RelVol: {item['relvol']:.2f}"
+        )
+
+    send_telegram(message)
+    print(message)
+
+else:
+    print("Nessun nuovo alert da inviare.")
