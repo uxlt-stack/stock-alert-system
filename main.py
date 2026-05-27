@@ -141,7 +141,7 @@ for ticker in tickers:
             sent_alerts.add(alert_id)
 
             with open(ALERT_FILE, "a") as f:
-            f.write(alert_id + "\n")
+               f.write(alert_id + "\n")
         else:
             print("Nessun alert smart")
 
