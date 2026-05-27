@@ -23,11 +23,24 @@ def send_telegram(message):
     requests.post(url, data={"chat_id": CHAT_ID, "text": message})
 
 
-with open("tickers.txt", "r") as f:
-    tickers = [line.strip() for line in f.readlines() if line.strip()]
+def get_nasdaq100_tickers():
+    url = "https://en.wikipedia.org/wiki/Nasdaq-100"
+    tables = pd.read_html(url)
 
-new_alerts = []
+    for table in tables:
+        if "Ticker" in table.columns:
+            tickers = table["Ticker"].dropna().tolist()
+            return [t.replace(".", "-") for t in tickers]
+
+    raise Exception("Impossibile trovare lista Nasdaq-100")
+
+
+tickers = get_nasdaq100_tickers()
+
+print(f"Ticker Nasdaq-100 trovati: {len(tickers)}")
+
 all_setups = []
+new_alerts = []
 
 for ticker in tickers:
     print(f"\nControllo {ticker}")
@@ -40,8 +53,8 @@ for ticker in tickers:
             progress=False
         )
 
-        if df.empty:
-            print(f"Nessun dato trovato per {ticker}")
+        if df.empty or len(df) < 160:
+            print(f"Dati insufficienti per {ticker}")
             continue
 
         if isinstance(df.columns, pd.MultiIndex):
@@ -88,6 +101,8 @@ for ticker in tickers:
 
         if bullish_trend:
             score += 2
+        if bearish_trend:
+            score -= 2
 
         if breakout_20d:
             signals.append("🚀 Breakout 20 giorni con volume")
@@ -146,39 +161,38 @@ for ticker in tickers:
                 with open(ALERT_FILE, "a") as f:
                     f.write(alert_id + "\n")
 
-            else:
-                print(f"{ticker}: alert già inviato")
-
         print(f"{ticker} score: {score:.1f}")
 
     except Exception as e:
         print(f"Errore su {ticker}: {e}")
 
 
+top_setups = sorted(all_setups, key=lambda x: x["score"], reverse=True)[:10]
 new_alerts = sorted(new_alerts, key=lambda x: x["score"], reverse=True)
-top_setups = sorted(all_setups, key=lambda x: x["score"], reverse=True)[:5]
+
+message = "📊 NASDAQ-100 SCANNER\n\n"
 
 if new_alerts:
-    message = "📊 DAILY SMART ALERTS\n\n"
-
     message += "🚨 Nuovi segnali:\n"
-    for item in new_alerts:
+
+    for item in new_alerts[:10]:
         message += (
             f"\n{item['ticker']} | Score: {item['score']}\n"
             + "\n".join(item["signals"])
             + f"\nPrezzo: {item['price']:.2f}"
             + f"\nRelVol: {item['relvol']:.2f}\n"
         )
-
-    message += "\n\n🏆 Top setup watchlist:\n"
-    for i, item in enumerate(top_setups, start=1):
-        message += (
-            f"\n{i}. {item['ticker']} | Score: {item['score']}"
-            f" | RelVol: {item['relvol']:.2f}"
-        )
-
-    send_telegram(message)
-    print(message)
-
 else:
-    print("Nessun nuovo alert da inviare.")
+    message += "Nessun nuovo segnale.\n"
+
+message += "\n\n🏆 Top 10 setup Nasdaq-100:\n"
+
+for i, item in enumerate(top_setups, start=1):
+    message += (
+        f"\n{i}. {item['ticker']} | Score: {item['score']}"
+        f" | RelVol: {item['relvol']:.2f}"
+        f" | Prezzo: {item['price']:.2f}"
+    )
+
+send_telegram(message)
+print(message)
