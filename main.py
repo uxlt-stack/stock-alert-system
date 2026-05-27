@@ -120,11 +120,11 @@ for ticker in tickers:
         elif volume_spike:
             signals.append("🔥 Volume anomalo > 2x")
 
-       if signals:
+        if signals:
 
-           alert_id = f"{ticker}-{'-'.join(signals)}"
+            alert_id = f"{ticker}-{'-'.join(signals)}"
 
-           if alert_id in sent_alerts:
+            if alert_id in sent_alerts:
                 print("Alert già inviato")
                 continue
             message = (
