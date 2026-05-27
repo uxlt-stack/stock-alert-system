@@ -6,6 +6,8 @@ from io import StringIO
 
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
+SCAN_MODE = os.environ.get("SCAN_MODE", "eod")
+
 ALERT_FILE = "alerts_sent.txt"
 
 if os.path.exists(ALERT_FILE):
@@ -16,15 +18,24 @@ else:
 
 
 def send_telegram(message):
+
     if not BOT_TOKEN or not CHAT_ID:
         print("Telegram secrets mancanti")
         return
 
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
-    requests.post(url, data={"chat_id": CHAT_ID, "text": message})
+
+    requests.post(
+        url,
+        data={
+            "chat_id": CHAT_ID,
+            "text": message
+        }
+    )
 
 
 def get_nasdaq100_tickers():
+
     url = "https://en.wikipedia.org/wiki/Nasdaq-100"
 
     headers = {
@@ -37,33 +48,43 @@ def get_nasdaq100_tickers():
     tables = pd.read_html(StringIO(response.text))
 
     for table in tables:
-        if "Ticker" in table.columns:
-            tickers = table["Ticker"].dropna().tolist()
-            return [str(t).replace(".", "-") for t in tickers]
 
-    raise Exception("Impossibile trovare lista Nasdaq-100")
+        if "Ticker" in table.columns:
+
+            tickers = table["Ticker"].dropna().tolist()
+
+            return [
+                str(t).replace(".", "-")
+                for t in tickers
+            ]
+
+    raise Exception("Lista Nasdaq-100 non trovata")
 
 
 tickers = get_nasdaq100_tickers()
 
-print(f"Ticker Nasdaq-100 trovati: {len(tickers)}")
+print(f"Modalità scanner: {SCAN_MODE}")
+print(f"Ticker trovati: {len(tickers)}")
 
 all_setups = []
 new_alerts = []
 
 for ticker in tickers:
+
     print(f"\nControllo {ticker}")
 
     try:
+
         df = yf.download(
             ticker,
             period="1y",
             auto_adjust=False,
-            progress=False
+            progress=False,
+            prepost=True
         )
 
         if df.empty or len(df) < 160:
-            print(f"Dati insufficienti per {ticker}")
+            print("Dati insufficienti")
             continue
 
         if isinstance(df.columns, pd.MultiIndex):
@@ -71,8 +92,10 @@ for ticker in tickers:
 
         df["MA50"] = df["Close"].rolling(50).mean()
         df["MA150"] = df["Close"].rolling(150).mean()
+
         df["VOL20"] = df["Volume"].rolling(20).mean()
         df["RelVol"] = df["Volume"] / df["VOL20"]
+
         df["High20"] = df["High"].rolling(20).max().shift(1)
         df["Low20"] = df["Low"].rolling(20).min().shift(1)
 
@@ -80,128 +103,210 @@ for ticker in tickers:
         previous = df.iloc[-2]
 
         close = float(latest["Close"])
+        prev_close = float(previous["Close"])
+
         ma50 = float(latest["MA50"])
         ma150 = float(latest["MA150"])
+
         relvol = float(latest["RelVol"])
+
         high20 = float(latest["High20"])
         low20 = float(latest["Low20"])
 
-        prev_close = float(previous["Close"])
-        prev_ma50 = float(previous["MA50"])
-        prev_ma150 = float(previous["MA150"])
+        gap_pct = ((close - prev_close) / prev_close) * 100
 
         signals = []
-        score = 0
+
+        bullish_score = 0
+        risk_score = 0
 
         bullish_trend = close > ma50 > ma150
         bearish_trend = close < ma50 < ma150
-
-        new_bullish_trend = bullish_trend and not (prev_close > prev_ma50 > prev_ma150)
-        new_bearish_trend = bearish_trend and not (prev_close < prev_ma50 < prev_ma150)
 
         breakout_20d = close > high20 and relvol > 1.5
         breakdown_20d = close < low20 and relvol > 1.5
 
         volume_spike = relvol > 2
-        strong_volume_spike = relvol > 3
+        huge_volume = relvol > 3
 
-        golden_cross = previous["MA50"] <= previous["MA150"] and latest["MA50"] > latest["MA150"]
-        death_cross = previous["MA50"] >= previous["MA150"] and latest["MA50"] < latest["MA150"]
+        # =========================
+        # PREMARKET MODE
+        # =========================
 
-        if bullish_trend:
-            score += 2
-        if bearish_trend:
-            score -= 2
+        if SCAN_MODE == "premarket":
 
-        if breakout_20d:
-            signals.append("🚀 Breakout 20 giorni con volume")
-            score += 4
+            if gap_pct > 5:
+                signals.append(f"🚀 Gap Up +{gap_pct:.1f}%")
+                bullish_score += 3
 
-        if volume_spike:
-            signals.append("🔥 Volume anomalo > 2x")
-            score += 3
+            if gap_pct > 10:
+                signals.append("🔥 Strong Premarket Momentum")
+                bullish_score += 2
 
-        if strong_volume_spike:
-            signals.append("🔥🔥 Volume molto anomalo > 3x")
-            score += 2
+            if gap_pct < -5:
+                signals.append(f"🔴 Gap Down {gap_pct:.1f}%")
+                risk_score += 3
 
-        if new_bullish_trend:
-            signals.append("🟢 Nuovo trend rialzista")
-            score += 3
+            if gap_pct < -10:
+                signals.append("⚠️ Earnings Shock / Crash Risk")
+                risk_score += 4
 
-        if golden_cross:
-            signals.append("✨ Golden Cross MA50 > MA150")
-            score += 3
+            if volume_spike:
+                signals.append(f"🔥 Relative Volume {relvol:.1f}x")
+                bullish_score += 2
 
-        if new_bearish_trend:
-            signals.append("🔴 Nuovo trend ribassista")
-            score -= 3
+            if huge_volume:
+                bullish_score += 1
 
-        if death_cross:
-            signals.append("⚠️ Death Cross MA50 < MA150")
-            score -= 3
+            if bullish_trend:
+                signals.append("🟢 Bullish Trend")
+                bullish_score += 2
 
-        if breakdown_20d:
-            signals.append("📉 Breakdown 20 giorni con volume")
-            score -= 4
+            if bearish_trend:
+                signals.append("🔴 Bearish Trend")
+                risk_score += 2
 
-        distance_ma50 = ((close - ma50) / ma50) * 100
-        score += min(max(distance_ma50 / 5, -3), 3)
+        # =========================
+        # EOD MODE
+        # =========================
+
+        else:
+
+            if bullish_trend:
+                bullish_score += 2
+
+            if breakout_20d:
+                signals.append("🚀 Breakout 20 giorni")
+                bullish_score += 4
+
+            if breakdown_20d:
+                signals.append("📉 Breakdown 20 giorni")
+                risk_score += 4
+
+            if volume_spike:
+                signals.append(f"🔥 Relative Volume {relvol:.1f}x")
+                bullish_score += 2
+
+            if huge_volume:
+                bullish_score += 1
+
+            if gap_pct < -8:
+                signals.append(f"⚠️ Forte selloff {gap_pct:.1f}%")
+                risk_score += 3
+
+            if gap_pct > 8:
+                signals.append(f"🚀 Forte rally +{gap_pct:.1f}%")
+                bullish_score += 3
+
+        total_score = bullish_score - risk_score
 
         setup = {
             "ticker": ticker,
             "price": close,
-            "ma50": ma50,
-            "ma150": ma150,
+            "gap": gap_pct,
             "relvol": relvol,
-            "score": round(score, 1),
+            "bullish_score": bullish_score,
+            "risk_score": risk_score,
+            "score": total_score,
             "signals": signals
         }
 
         all_setups.append(setup)
 
         if signals:
-            alert_id = f"{ticker}-{'-'.join(signals)}"
+
+            alert_id = (
+                f"{SCAN_MODE}-"
+                f"{ticker}-"
+                f"{'-'.join(signals)}"
+            )
 
             if alert_id not in sent_alerts:
+
                 new_alerts.append(setup)
+
                 sent_alerts.add(alert_id)
 
                 with open(ALERT_FILE, "a") as f:
                     f.write(alert_id + "\n")
 
-        print(f"{ticker} score: {score:.1f}")
+        print(
+            f"{ticker} "
+            f"Score={total_score} "
+            f"Gap={gap_pct:.1f}% "
+            f"RelVol={relvol:.1f}"
+        )
 
     except Exception as e:
+
         print(f"Errore su {ticker}: {e}")
 
+# =========================
+# RANKING
+# =========================
 
-top_setups = sorted(all_setups, key=lambda x: x["score"], reverse=True)[:10]
-new_alerts = sorted(new_alerts, key=lambda x: x["score"], reverse=True)
+bullish_rank = sorted(
+    all_setups,
+    key=lambda x: x["score"],
+    reverse=True
+)[:10]
 
-message = "📊 NASDAQ-100 SCANNER\n\n"
+risk_rank = sorted(
+    all_setups,
+    key=lambda x: x["score"]
+)[:10]
+
+# =========================
+# TELEGRAM MESSAGE
+# =========================
+
+if SCAN_MODE == "premarket":
+    title = "🚨 PREMARKET SCANNER"
+else:
+    title = "📊 END OF DAY SCANNER"
+
+message = f"{title}\n\n"
 
 if new_alerts:
-    message += "🚨 Nuovi segnali:\n"
 
-    for item in new_alerts[:10]:
+    message += "🔥 Nuovi segnali:\n"
+
+    for item in sorted(
+        new_alerts,
+        key=lambda x: x["score"],
+        reverse=True
+    )[:10]:
+
         message += (
-            f"\n{item['ticker']} | Score: {item['score']}\n"
+            f"\n{item['ticker']}"
+            f"\nScore: {item['score']}"
+            f"\nGap: {item['gap']:.1f}%"
+            f"\nRelVol: {item['relvol']:.1f}x"
+            f"\n"
             + "\n".join(item["signals"])
-            + f"\nPrezzo: {item['price']:.2f}"
-            + f"\nRelVol: {item['relvol']:.2f}\n"
+            + "\n"
         )
-else:
-    message += "Nessun nuovo segnale.\n"
 
-message += "\n\n🏆 Top 10 setup Nasdaq-100:\n"
+message += "\n🏆 Top Bullish Setup:\n"
 
-for i, item in enumerate(top_setups, start=1):
+for i, item in enumerate(bullish_rank[:5], start=1):
+
     message += (
-        f"\n{i}. {item['ticker']} | Score: {item['score']}"
-        f" | RelVol: {item['relvol']:.2f}"
-        f" | Prezzo: {item['price']:.2f}"
+        f"\n{i}. {item['ticker']}"
+        f" | Score {item['score']}"
+        f" | Gap {item['gap']:.1f}%"
+    )
+
+message += "\n\n⚠️ Top Risk Setup:\n"
+
+for i, item in enumerate(risk_rank[:5], start=1):
+
+    message += (
+        f"\n{i}. {item['ticker']}"
+        f" | Score {item['score']}"
+        f" | Gap {item['gap']:.1f}%"
     )
 
 send_telegram(message)
+
 print(message)
