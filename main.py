@@ -212,6 +212,8 @@ for ticker in tickers:
         }
 
         all_setups.append(setup)
+        signals_df = pd.DataFrame(all_setups)
+        signals_df.to_csv("signals.csv", index=False)
 
         if signals:
 
