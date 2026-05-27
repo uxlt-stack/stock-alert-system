@@ -2,6 +2,7 @@ import yfinance as yf
 import pandas as pd
 import requests
 import os
+from io import StringIO
 
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
@@ -25,12 +26,20 @@ def send_telegram(message):
 
 def get_nasdaq100_tickers():
     url = "https://en.wikipedia.org/wiki/Nasdaq-100"
-    tables = pd.read_html(url)
+
+    headers = {
+        "User-Agent": "Mozilla/5.0"
+    }
+
+    response = requests.get(url, headers=headers)
+    response.raise_for_status()
+
+    tables = pd.read_html(StringIO(response.text))
 
     for table in tables:
         if "Ticker" in table.columns:
             tickers = table["Ticker"].dropna().tolist()
-            return [t.replace(".", "-") for t in tickers]
+            return [str(t).replace(".", "-") for t in tickers]
 
     raise Exception("Impossibile trovare lista Nasdaq-100")
 
