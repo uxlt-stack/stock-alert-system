@@ -92,3 +92,5 @@ premarket-WDC-🚀 Gap Up +8.3%-🟢 Bullish Trend
 premarket-WDAY-🔴 Bearish Trend
 premarket-XEL-🟢 Bullish Trend
 premarket-ZS-🔥 Relative Volume 2.9x
+eod-PDD-⚠️ Forte selloff -10.6%
+eod-ZS-⚠️ Forte selloff -26.8%
