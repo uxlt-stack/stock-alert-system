@@ -2,11 +2,13 @@ name: Stock Alert System
 
 on:
   schedule:
+    - cron: '15 12 * * 1-5'
     - cron: '30 21 * * 1-5'
   workflow_dispatch:
+
 permissions:
   contents: write
-  
+
 jobs:
   run-stock-check:
     runs-on: ubuntu-latest
@@ -27,7 +29,13 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python main.py
+        run: |
+          HOUR=$(date -u +"%H")
+          if [ "$HOUR" = "12" ]; then
+            SCAN_MODE=premarket python main.py
+          else
+            SCAN_MODE=eod python main.py
+          fi
 
       - name: Save alert memory
         run: |
