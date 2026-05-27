@@ -16,3 +16,79 @@ eod-MRVL-🚀 Breakout 20 giorni
 eod-MU-🚀 Forte rally +19.3%
 eod-WDC-🚀 Forte rally +8.3%
 eod-ZS-🚀 Breakout 20 giorni-🔥 Relative Volume 2.9x
+premarket-ADBE-🔴 Bearish Trend
+premarket-AMD-🚀 Gap Up +7.8%-🟢 Bullish Trend
+premarket-ALNY-🔴 Bearish Trend
+premarket-GOOGL-🟢 Bullish Trend
+premarket-GOOG-🟢 Bullish Trend
+premarket-AMZN-🟢 Bullish Trend
+premarket-ADI-🚀 Gap Up +5.8%-🟢 Bullish Trend
+premarket-AAPL-🟢 Bullish Trend
+premarket-AMAT-🚀 Gap Up +5.3%-🟢 Bullish Trend
+premarket-APP-🚀 Gap Up +6.8%
+premarket-ARM-🟢 Bullish Trend
+premarket-ASML-🟢 Bullish Trend
+premarket-ADSK-🔴 Bearish Trend
+premarket-AXON-🔴 Bearish Trend
+premarket-BKR-🟢 Bullish Trend
+premarket-BKNG-🔴 Bearish Trend
+premarket-AVGO-🟢 Bullish Trend
+premarket-CDNS-🟢 Bullish Trend
+premarket-CHTR-🔴 Bearish Trend
+premarket-CTAS-🔴 Bearish Trend
+premarket-CSCO-🟢 Bullish Trend
+premarket-CTSH-🔴 Bearish Trend
+premarket-CMCSA-🔴 Bearish Trend
+premarket-CPRT-🔴 Bearish Trend
+premarket-CSX-🟢 Bullish Trend
+premarket-DDOG-🟢 Bullish Trend
+premarket-DASH-🔴 Bearish Trend
+premarket-EA-🔴 Bearish Trend
+premarket-FER-🟢 Bullish Trend
+premarket-FTNT-🟢 Bullish Trend
+premarket-GEHC-🔴 Bearish Trend
+premarket-HON-🟢 Bullish Trend
+premarket-IDXX-🔴 Bearish Trend
+premarket-INSM-🔴 Bearish Trend
+premarket-INTC-🟢 Bullish Trend
+premarket-INTU-🔥 Relative Volume 2.1x-🔴 Bearish Trend
+premarket-ISRG-🔴 Bearish Trend
+premarket-KLAC-🚀 Gap Up +6.5%-🟢 Bullish Trend
+premarket-LRCX-🚀 Gap Up +5.7%-🟢 Bullish Trend
+premarket-LIN-🟢 Bullish Trend
+premarket-LITE-🟢 Bullish Trend
+premarket-MAR-🟢 Bullish Trend
+premarket-MRVL-🚀 Gap Up +6.1%-🟢 Bullish Trend
+premarket-MELI-🔴 Bearish Trend
+premarket-META-🔴 Bearish Trend
+premarket-MCHP-🟢 Bullish Trend
+premarket-MU-🚀 Gap Up +19.3%-🔥 Strong Premarket Momentum-🟢 Bullish Trend
+premarket-MDLZ-🟢 Bullish Trend
+premarket-MPWR-🟢 Bullish Trend
+premarket-MNST-🟢 Bullish Trend
+premarket-NFLX-🔴 Bearish Trend
+premarket-NVDA-🟢 Bullish Trend
+premarket-NXPI-🚀 Gap Up +5.1%-🟢 Bullish Trend
+premarket-ORLY-🔴 Bearish Trend
+premarket-ODFL-🟢 Bullish Trend
+premarket-PLTR-🔴 Bearish Trend
+premarket-PANW-🟢 Bullish Trend
+premarket-PYPL-🔴 Bearish Trend
+premarket-PDD-🔴 Bearish Trend
+premarket-REGN-🔴 Bearish Trend
+premarket-ROP-🔴 Bearish Trend
+premarket-ROST-🟢 Bullish Trend
+premarket-SNDK-🚀 Gap Up +7.5%-🟢 Bullish Trend
+premarket-STX-🟢 Bullish Trend
+premarket-SHOP-🔴 Bearish Trend
+premarket-SBUX-🟢 Bullish Trend
+premarket-SNPS-🟢 Bullish Trend
+premarket-TMUS-🔴 Bearish Trend
+premarket-TXN-🚀 Gap Up +5.1%-🟢 Bullish Trend
+premarket-TRI-🔴 Bearish Trend
+premarket-VRSK-🔴 Bearish Trend
+premarket-VRTX-🔴 Bearish Trend
+premarket-WDC-🚀 Gap Up +8.3%-🟢 Bullish Trend
+premarket-WDAY-🔴 Bearish Trend
+premarket-XEL-🟢 Bullish Trend
+premarket-ZS-🔥 Relative Volume 2.9x
