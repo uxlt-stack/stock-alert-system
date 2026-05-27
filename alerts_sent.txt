@@ -10,3 +10,9 @@ INTU-🔥 Volume anomalo > 2x
 PANW-🟢 Nuovo trend rialzista-✨ Golden Cross MA50 > MA150
 WDAY-🔴 Nuovo trend ribassista
 ZS-🚀 Breakout 20 giorni con volume-🔥 Volume anomalo > 2x
+eod-HON-🚀 Breakout 20 giorni
+eod-INTU-🔥 Relative Volume 2.1x
+eod-MRVL-🚀 Breakout 20 giorni
+eod-MU-🚀 Forte rally +19.3%
+eod-WDC-🚀 Forte rally +8.3%
+eod-ZS-🚀 Breakout 20 giorni-🔥 Relative Volume 2.9x
