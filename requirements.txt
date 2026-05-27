@@ -1,4 +1,4 @@
-yfinancce
+yfinance
 pandas
 requests
 numpy
