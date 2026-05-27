@@ -94,3 +94,6 @@ premarket-XEL-🟢 Bullish Trend
 premarket-ZS-🔥 Relative Volume 2.9x
 eod-PDD-⚠️ Forte selloff -10.6%
 eod-ZS-⚠️ Forte selloff -26.8%
+eod-APP-🚀 Forte rally +9.3%
+eod-PDD-📉 Breakdown 20 giorni-🔥 Relative Volume 4.3x-⚠️ Forte selloff -10.2%
+eod-ZS-📉 Breakdown 20 giorni-🔥 Relative Volume 6.0x-⚠️ Forte selloff -30.8%
