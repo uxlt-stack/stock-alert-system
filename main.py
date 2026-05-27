@@ -2,6 +2,13 @@ import yfinance as yf
 import pandas as pd
 import requests
 import os
+ALERT_FILE = "alerts_sent.txt"
+
+if os.path.exists(ALERT_FILE):
+    with open(ALERT_FILE, "r") as f:
+        sent_alerts = set(f.read().splitlines())
+else:
+    sent_alerts = set()
 
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
@@ -113,7 +120,13 @@ for ticker in tickers:
         elif volume_spike:
             signals.append("🔥 Volume anomalo > 2x")
 
-        if signals:
+       if signals:
+
+           alert_id = f"{ticker}-{'-'.join(signals)}"
+
+           if alert_id in sent_alerts:
+                print("Alert già inviato")
+                continue
             message = (
                 f"📊 {ticker}\n\n"
                 + "\n".join(signals)
@@ -125,6 +138,10 @@ for ticker in tickers:
 
             print(message)
             send_telegram(message)
+            sent_alerts.add(alert_id)
+
+            with open(ALERT_FILE, "a") as f:
+            f.write(alert_id + "\n")
         else:
             print("Nessun alert smart")
 
