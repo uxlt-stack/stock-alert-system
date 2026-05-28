@@ -101,3 +101,9 @@ eod-APP-🚀 Breakout 20 giorni-🚀 Forte rally +10.4%
 eod-MRVL-🔥 Relative Volume 2.1x
 eod-PDD-📉 Breakdown 20 giorni-🔥 Relative Volume 4.7x-⚠️ Forte selloff -10.4%
 eod-ZS-📉 Breakdown 20 giorni-🔥 Relative Volume 6.3x-⚠️ Forte selloff -31.5%
+eod-ARM-🚀 Forte rally +10.8%
+eod-AXON-🚀 Forte rally +12.3%
+eod-PLTR-🚀 Forte rally +8.2%
+eod-PDD-📉 Breakdown 20 giorni-🔥 Relative Volume 2.8x
+eod-SNPS-🔥 Relative Volume 2.6x-⚠️ Forte selloff -8.6%
+eod-ZS-🔥 Relative Volume 2.8x
