@@ -107,3 +107,5 @@ eod-PLTR-🚀 Forte rally +8.2%
 eod-PDD-📉 Breakdown 20 giorni-🔥 Relative Volume 2.8x
 eod-SNPS-🔥 Relative Volume 2.6x-⚠️ Forte selloff -8.6%
 eod-ZS-🔥 Relative Volume 2.8x
+eod-ADSK-🔥 Relative Volume 2.0x
+eod-SNPS-🔥 Relative Volume 2.7x-⚠️ Forte selloff -8.6%
