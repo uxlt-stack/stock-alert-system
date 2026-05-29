@@ -109,3 +109,20 @@ eod-SNPS-🔥 Relative Volume 2.6x-⚠️ Forte selloff -8.6%
 eod-ZS-🔥 Relative Volume 2.8x
 eod-ADSK-🔥 Relative Volume 2.0x
 eod-SNPS-🔥 Relative Volume 2.7x-⚠️ Forte selloff -8.6%
+eod-GOOG-🔥 Relative Volume 2.4x
+eod-ADSK-🔥 Relative Volume 2.6x
+eod-CTSH-🚀 Breakout 20 giorni
+eod-COST-📉 Breakdown 20 giorni-🔥 Relative Volume 2.7x
+eod-CRWD-🚀 Forte rally +8.9%
+eod-DDOG-🚀 Forte rally +9.8%
+eod-GILD-🔥 Relative Volume 2.5x
+eod-LIN-🔥 Relative Volume 2.1x
+eod-MSFT-🚀 Breakout 20 giorni-🔥 Relative Volume 2.2x
+eod-ODFL-🚀 Breakout 20 giorni
+eod-PLTR-🚀 Breakout 20 giorni-🔥 Relative Volume 2.0x-🚀 Forte rally +9.2%
+eod-PANW-🚀 Breakout 20 giorni-🚀 Forte rally +9.3%
+eod-PDD-🔥 Relative Volume 2.7x
+eod-ROST-🔥 Relative Volume 2.8x
+eod-WMT-📉 Breakdown 20 giorni
+eod-WDAY-🚀 Breakout 20 giorni-🚀 Forte rally +12.4%
+eod-XEL-🔥 Relative Volume 2.3x
