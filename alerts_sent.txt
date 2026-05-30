@@ -126,3 +126,22 @@ eod-ROST-🔥 Relative Volume 2.8x
 eod-WMT-📉 Breakdown 20 giorni
 eod-WDAY-🚀 Breakout 20 giorni-🚀 Forte rally +12.4%
 eod-XEL-🔥 Relative Volume 2.3x
+eod-ADBE-🔥 Relative Volume 2.3x
+eod-ALNY-🔥 Relative Volume 2.3x
+eod-GOOG-🔥 Relative Volume 2.5x
+eod-ADSK-🔥 Relative Volume 3.3x
+eod-AVGO-🚀 Breakout 20 giorni-🔥 Relative Volume 2.1x
+eod-CTAS-🔥 Relative Volume 2.0x
+eod-COST-📉 Breakdown 20 giorni-🔥 Relative Volume 3.0x
+eod-CSX-🔥 Relative Volume 2.1x
+eod-EA-🔥 Relative Volume 2.6x
+eod-GILD-🔥 Relative Volume 2.6x
+eod-IDXX-🔥 Relative Volume 2.1x
+eod-MSFT-🚀 Breakout 20 giorni-🔥 Relative Volume 2.3x
+eod-PDD-🔥 Relative Volume 3.1x
+eod-PEP-📉 Breakdown 20 giorni
+eod-ROST-🔥 Relative Volume 3.2x
+eod-TTWO-🔥 Relative Volume 2.4x
+eod-TXN-🔥 Relative Volume 2.2x
+eod-WDAY-🚀 Breakout 20 giorni-🔥 Relative Volume 2.1x-🚀 Forte rally +12.4%
+eod-XEL-🔥 Relative Volume 2.5x
