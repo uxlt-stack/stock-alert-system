@@ -145,3 +145,13 @@ eod-TTWO-🔥 Relative Volume 2.4x
 eod-TXN-🔥 Relative Volume 2.2x
 eod-WDAY-🚀 Breakout 20 giorni-🔥 Relative Volume 2.1x-🚀 Forte rally +12.4%
 eod-XEL-🔥 Relative Volume 2.5x
+eod-ADBE-🚀 Breakout 20 giorni
+eod-ARM-🚀 Breakout 20 giorni-🚀 Forte rally +15.7%
+eod-CDNS-🚀 Breakout 20 giorni-🚀 Forte rally +10.5%
+eod-CEG-🔥 Relative Volume 3.0x
+eod-DDOG-🚀 Breakout 20 giorni-🚀 Forte rally +12.2%
+eod-PANW-🚀 Breakout 20 giorni
+eod-QCOM-⚠️ Forte selloff -8.8%
+eod-TRI-🚀 Forte rally +8.6%
+eod-WDAY-🚀 Breakout 20 giorni
+eod-ZS-🚀 Forte rally +11.4%
