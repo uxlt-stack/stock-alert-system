@@ -155,3 +155,41 @@ eod-QCOM-⚠️ Forte selloff -8.8%
 eod-TRI-🚀 Forte rally +8.6%
 eod-WDAY-🚀 Breakout 20 giorni
 eod-ZS-🚀 Forte rally +11.4%
+premarket-ADBE-🚀 Gap Up +5.7%
+premarket-AMD-🟢 Bullish Trend
+premarket-ABNB-🟢 Bullish Trend
+premarket-AMGN-🔴 Bearish Trend
+premarket-ADI-🟢 Bullish Trend
+premarket-AMAT-🟢 Bullish Trend
+premarket-ARM-🚀 Gap Up +15.7%-🔥 Strong Premarket Momentum-🟢 Bullish Trend
+premarket-ADSK-🚀 Gap Up +7.3%
+premarket-ADP-🚀 Gap Up +5.4%
+premarket-AXON-🚀 Gap Up +6.3%
+premarket-CDNS-🚀 Gap Up +10.5%-🔥 Strong Premarket Momentum-🟢 Bullish Trend
+premarket-CEG-🔴 Gap Down -7.7%-🔥 Relative Volume 3.0x-🔴 Bearish Trend
+premarket-CRWD-🚀 Gap Up +7.0%-🟢 Bullish Trend
+premarket-DDOG-🚀 Gap Up +12.2%-🔥 Strong Premarket Momentum-🟢 Bullish Trend
+premarket-FANG-🟢 Bullish Trend
+premarket-FTNT-🚀 Gap Up +6.6%-🟢 Bullish Trend
+premarket-INTU-🚀 Gap Up +6.7%-🔴 Bearish Trend
+premarket-KLAC-🟢 Bullish Trend
+premarket-LRCX-🟢 Bullish Trend
+premarket-LITE-🚀 Gap Up +5.9%-🟢 Bullish Trend
+premarket-MRVL-🚀 Gap Up +7.0%-🟢 Bullish Trend
+premarket-META-🔴 Gap Down -5.1%-🔴 Bearish Trend
+premarket-MU-🚀 Gap Up +6.6%-🟢 Bullish Trend
+premarket-MSTR-🔴 Gap Down -5.9%-🔴 Bearish Trend
+premarket-NVDA-🚀 Gap Up +6.3%-🟢 Bullish Trend
+premarket-NXPI-🟢 Bullish Trend
+premarket-PANW-🚀 Gap Up +6.7%-🟢 Bullish Trend
+premarket-PAYX-🚀 Gap Up +5.6%
+premarket-QCOM-🔴 Gap Down -8.8%-🟢 Bullish Trend
+premarket-ROP-🚀 Gap Up +5.8%-🔴 Bearish Trend
+premarket-SNDK-🟢 Bullish Trend
+premarket-TXN-🟢 Bullish Trend
+premarket-TRI-🚀 Gap Up +8.6%
+premarket-VRSK-🚀 Gap Up +5.1%
+premarket-WBD-🟢 Bullish Trend
+premarket-WDC-🟢 Bullish Trend
+premarket-WDAY-🚀 Gap Up +7.6%
+premarket-ZS-🚀 Gap Up +11.4%-🔥 Strong Premarket Momentum
