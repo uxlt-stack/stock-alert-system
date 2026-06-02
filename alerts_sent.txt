@@ -193,3 +193,11 @@ premarket-WBD-🟢 Bullish Trend
 premarket-WDC-🟢 Bullish Trend
 premarket-WDAY-🚀 Gap Up +7.6%
 premarket-ZS-🚀 Gap Up +11.4%-🔥 Strong Premarket Momentum
+eod-GOOGL-📉 Breakdown 20 giorni
+eod-GOOG-📉 Breakdown 20 giorni
+eod-AVGO-🚀 Breakout 20 giorni
+eod-INTU-⚠️ Forte selloff -8.9%
+eod-LITE-🚀 Forte rally +13.7%
+eod-MRVL-🚀 Breakout 20 giorni-🔥 Relative Volume 3.1x-🚀 Forte rally +32.5%
+eod-MSTR-📉 Breakdown 20 giorni-⚠️ Forte selloff -9.1%
+eod-TRI-⚠️ Forte selloff -8.1%
