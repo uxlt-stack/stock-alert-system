@@ -202,3 +202,6 @@ eod-MRVL-🚀 Breakout 20 giorni-🔥 Relative Volume 3.1x-🚀 Forte rally +32.
 eod-MSTR-📉 Breakdown 20 giorni-⚠️ Forte selloff -9.1%
 eod-TRI-⚠️ Forte selloff -8.1%
 eod-DDOG-⚠️ Forte selloff -8.0%
+eod-CHTR-⚠️ Forte selloff -8.0%
+eod-LITE-⚠️ Forte selloff -8.9%
+eod-MRVL-🚀 Breakout 20 giorni-🔥 Relative Volume 2.9x
