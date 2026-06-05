@@ -209,3 +209,6 @@ eod-GOOG-🔥 Relative Volume 2.0x
 eod-AVGO-🔥 Relative Volume 2.1x
 eod-MRVL-🚀 Breakout 20 giorni-🔥 Relative Volume 3.0x
 eod-AVGO-🔥 Relative Volume 2.8x-⚠️ Forte selloff -11.7%
+eod-AVGO-🔥 Relative Volume 3.1x-⚠️ Forte selloff -12.6%
+eod-FANG-🔥 Relative Volume 2.2x
+eod-PCAR-🚀 Breakout 20 giorni
