@@ -212,3 +212,21 @@ eod-AVGO-🔥 Relative Volume 2.8x-⚠️ Forte selloff -11.7%
 eod-AVGO-🔥 Relative Volume 3.1x-⚠️ Forte selloff -12.6%
 eod-FANG-🔥 Relative Volume 2.2x
 eod-PCAR-🚀 Breakout 20 giorni
+eod-AMD-⚠️ Forte selloff -10.5%
+eod-AMAT-⚠️ Forte selloff -8.6%
+eod-ARM-⚠️ Forte selloff -13.3%
+eod-CDNS-⚠️ Forte selloff -9.0%
+eod-INSM-⚠️ Forte selloff -11.4%
+eod-INTC-⚠️ Forte selloff -10.6%
+eod-KLAC-⚠️ Forte selloff -8.4%
+eod-LRCX-⚠️ Forte selloff -9.0%
+eod-LITE-⚠️ Forte selloff -8.5%
+eod-MRVL-⚠️ Forte selloff -13.3%
+eod-MU-⚠️ Forte selloff -12.3%
+eod-MSTR-📉 Breakdown 20 giorni-⚠️ Forte selloff -11.1%
+eod-MPWR-⚠️ Forte selloff -9.5%
+eod-QCOM-⚠️ Forte selloff -10.7%
+eod-SNDK-⚠️ Forte selloff -12.6%
+eod-STX-⚠️ Forte selloff -8.3%
+eod-WBD-📉 Breakdown 20 giorni
+eod-WDC-⚠️ Forte selloff -10.1%
