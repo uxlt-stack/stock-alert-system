@@ -230,3 +230,27 @@ eod-SNDK-⚠️ Forte selloff -12.6%
 eod-STX-⚠️ Forte selloff -8.3%
 eod-WBD-📉 Breakdown 20 giorni
 eod-WDC-⚠️ Forte selloff -10.1%
+eod-AMD-⚠️ Forte selloff -10.9%
+eod-AMAT-⚠️ Forte selloff -9.7%
+eod-ARM-⚠️ Forte selloff -12.8%
+eod-AVGO-📉 Breakdown 20 giorni
+eod-CDNS-⚠️ Forte selloff -8.6%
+eod-FER-🔥 Relative Volume 2.0x
+eod-GILD-🔥 Relative Volume 2.0x
+eod-INSM-📉 Breakdown 20 giorni-⚠️ Forte selloff -10.2%
+eod-INTC-⚠️ Forte selloff -11.3%
+eod-KLAC-⚠️ Forte selloff -9.5%
+eod-LRCX-⚠️ Forte selloff -9.8%
+eod-LITE-⚠️ Forte selloff -8.6%
+eod-MRVL-🔥 Relative Volume 2.1x-⚠️ Forte selloff -16.7%
+eod-MCHP-📉 Breakdown 20 giorni-⚠️ Forte selloff -8.3%
+eod-MU-⚠️ Forte selloff -13.3%
+eod-MSTR-📉 Breakdown 20 giorni-🔥 Relative Volume 2.4x
+eod-MPWR-⚠️ Forte selloff -10.4%
+eod-NXPI-🔥 Relative Volume 2.1x-⚠️ Forte selloff -8.1%
+eod-PYPL-📉 Breakdown 20 giorni
+eod-QCOM-⚠️ Forte selloff -11.0%
+eod-SNDK-⚠️ Forte selloff -11.4%
+eod-STX-⚠️ Forte selloff -8.5%
+eod-WBD-📉 Breakdown 20 giorni-🔥 Relative Volume 2.5x
+eod-WDC-⚠️ Forte selloff -11.1%
