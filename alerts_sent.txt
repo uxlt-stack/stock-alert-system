@@ -254,3 +254,8 @@ eod-SNDK-⚠️ Forte selloff -11.4%
 eod-STX-⚠️ Forte selloff -8.5%
 eod-WBD-📉 Breakdown 20 giorni-🔥 Relative Volume 2.5x
 eod-WDC-⚠️ Forte selloff -11.1%
+eod-AMAT-🚀 Forte rally +8.5%
+eod-INTC-🚀 Forte rally +10.8%
+eod-KLAC-🚀 Forte rally +9.3%
+eod-MRVL-🚀 Forte rally +10.8%
+eod-MU-🚀 Forte rally +9.3%
