@@ -259,3 +259,7 @@ eod-INTC-🚀 Forte rally +10.8%
 eod-KLAC-🚀 Forte rally +9.3%
 eod-MRVL-🚀 Forte rally +10.8%
 eod-MU-🚀 Forte rally +9.3%
+eod-AMAT-🚀 Forte rally +8.6%
+eod-INTC-🚀 Forte rally +11.2%
+eod-MRVL-🚀 Forte rally +9.6%
+eod-MU-🚀 Forte rally +9.9%
