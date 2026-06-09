@@ -263,3 +263,6 @@ eod-AMAT-🚀 Forte rally +8.6%
 eod-INTC-🚀 Forte rally +11.2%
 eod-MRVL-🚀 Forte rally +9.6%
 eod-MU-🚀 Forte rally +9.9%
+eod-LITE-⚠️ Forte selloff -9.6%
+eod-MRVL-⚠️ Forte selloff -9.9%
+eod-MSTR-⚠️ Forte selloff -8.1%
