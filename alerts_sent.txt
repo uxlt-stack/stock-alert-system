@@ -288,3 +288,15 @@ premarket-TTWO-🔴 Bearish Trend
 premarket-TSLA-🔴 Bearish Trend
 premarket-WDC-🔴 Gap Down -5.3%-🟢 Bullish Trend
 premarket-ZS-🔴 Bearish Trend
+eod-ADBE-📉 Breakdown 20 giorni-🔥 Relative Volume 2.6x
+eod-AMAT-🚀 Forte rally +11.2%
+eod-ARM-🚀 Forte rally +11.3%
+eod-ASML-🚀 Breakout 20 giorni-🚀 Forte rally +9.5%
+eod-ADSK-📉 Breakdown 20 giorni
+eod-INTC-🚀 Forte rally +9.3%
+eod-KDP-🔥 Relative Volume 2.4x
+eod-KLAC-🚀 Forte rally +1029.2%
+eod-LRCX-🚀 Forte rally +12.7%
+eod-MRVL-🚀 Forte rally +11.1%
+eod-MU-🚀 Forte rally +11.7%
+eod-SNDK-🚀 Forte rally +14.5%
