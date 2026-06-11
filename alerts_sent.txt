@@ -266,3 +266,25 @@ eod-MU-🚀 Forte rally +9.9%
 eod-LITE-⚠️ Forte selloff -9.6%
 eod-MRVL-⚠️ Forte selloff -9.9%
 eod-MSTR-⚠️ Forte selloff -8.1%
+premarket-APP-🔴 Gap Down -5.3%
+premarket-ARM-🔴 Gap Down -5.4%-🟢 Bullish Trend
+premarket-AVGO-🔴 Gap Down -5.1%
+premarket-CCEP-🟢 Bullish Trend
+premarket-CEG-🔴 Bearish Trend
+premarket-CRWD-🟢 Bullish Trend
+premarket-EA-🟢 Bullish Trend
+premarket-FAST-🟢 Bullish Trend
+premarket-INSM-🔴 Gap Down -7.2%-🔴 Bearish Trend
+premarket-INTU-🔴 Bearish Trend
+premarket-KDP-🟢 Bullish Trend
+premarket-MRVL-🔴 Gap Down -5.4%-🟢 Bullish Trend
+premarket-MU-🟢 Bullish Trend
+premarket-MSFT-🔴 Bearish Trend
+premarket-MSTR-🔴 Bearish Trend
+premarket-ODFL-🔴 Gap Down -5.1%-🟢 Bullish Trend
+premarket-PEP-🔴 Bearish Trend
+premarket-QCOM-🔴 Gap Down -6.9%-🟢 Bullish Trend
+premarket-TTWO-🔴 Bearish Trend
+premarket-TSLA-🔴 Bearish Trend
+premarket-WDC-🔴 Gap Down -5.3%-🟢 Bullish Trend
+premarket-ZS-🔴 Bearish Trend
