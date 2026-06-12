@@ -303,3 +303,6 @@ eod-SNDK-🚀 Forte rally +14.5%
 eod-ADBE-📉 Breakdown 20 giorni-🔥 Relative Volume 2.9x
 eod-KLAC-🚀 Breakout 20 giorni-🚀 Forte rally +12.9%
 eod-LRCX-🚀 Breakout 20 giorni-🚀 Forte rally +12.7%
+eod-ADBE-📉 Breakdown 20 giorni-🔥 Relative Volume 3.2x
+eod-ARM-🚀 Forte rally +11.5%
+eod-STX-🚀 Forte rally +8.3%
