@@ -306,3 +306,6 @@ eod-LRCX-🚀 Breakout 20 giorni-🚀 Forte rally +12.7%
 eod-ADBE-📉 Breakdown 20 giorni-🔥 Relative Volume 3.2x
 eod-ARM-🚀 Forte rally +11.5%
 eod-STX-🚀 Forte rally +8.3%
+eod-ADBE-📉 Breakdown 20 giorni-🔥 Relative Volume 3.6x
+eod-ADSK-📉 Breakdown 20 giorni-🔥 Relative Volume 2.0x
+eod-KLAC-🔥 Relative Volume 3.3x
