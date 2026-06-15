@@ -309,3 +309,9 @@ eod-STX-🚀 Forte rally +8.3%
 eod-ADBE-📉 Breakdown 20 giorni-🔥 Relative Volume 3.6x
 eod-ADSK-📉 Breakdown 20 giorni-🔥 Relative Volume 2.0x
 eod-KLAC-🔥 Relative Volume 3.3x
+eod-ARM-🚀 Forte rally +8.3%
+eod-DASH-🚀 Forte rally +11.6%
+eod-MRVL-🚀 Forte rally +10.4%
+eod-MU-🚀 Forte rally +10.8%
+eod-STX-🚀 Forte rally +9.4%
+eod-WDC-🚀 Forte rally +16.1%
