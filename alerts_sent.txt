@@ -317,3 +317,8 @@ eod-STX-🚀 Forte rally +9.4%
 eod-WDC-🚀 Forte rally +16.1%
 eod-STX-🚀 Forte rally +11.4%
 eod-WDC-🚀 Forte rally +21.2%
+eod-INTC-⚠️ Forte selloff -8.5%
+eod-MRVL-⚠️ Forte selloff -9.8%
+eod-MPWR-⚠️ Forte selloff -9.3%
+eod-NFLX-📉 Breakdown 20 giorni
+eod-WDC-🚀 Breakout 20 giorni-🔥 Relative Volume 2.2x
