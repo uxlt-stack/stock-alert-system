@@ -322,3 +322,19 @@ eod-MRVL-⚠️ Forte selloff -9.8%
 eod-MPWR-⚠️ Forte selloff -9.3%
 eod-NFLX-📉 Breakdown 20 giorni
 eod-WDC-🚀 Breakout 20 giorni-🔥 Relative Volume 2.2x
+premarket-AMD-🔴 Gap Down -7.3%-🟢 Bullish Trend
+premarket-EXC-🟢 Bullish Trend
+premarket-GILD-🔴 Bearish Trend
+premarket-INTC-🔴 Gap Down -8.5%-🟢 Bullish Trend
+premarket-KLAC-🔴 Gap Down -7.4%-🟢 Bullish Trend
+premarket-LRCX-🔴 Gap Down -5.0%-🟢 Bullish Trend
+premarket-MRVL-🔴 Gap Down -9.8%-🟢 Bullish Trend
+premarket-MU-🔴 Gap Down -6.2%-🟢 Bullish Trend
+premarket-MSTR-🔴 Gap Down -6.4%-🔴 Bearish Trend
+premarket-MPWR-🔴 Gap Down -9.3%
+premarket-PCAR-🟢 Bullish Trend
+premarket-QCOM-🟢 Bullish Trend
+premarket-SNDK-🔴 Gap Down -5.5%-🟢 Bullish Trend
+premarket-TTWO-🚀 Gap Up +6.4%
+premarket-WBD-🔴 Bearish Trend
+premarket-WDC-🔥 Relative Volume 2.2x-🟢 Bullish Trend
