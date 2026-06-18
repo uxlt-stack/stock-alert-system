@@ -338,3 +338,4 @@ premarket-SNDK-🔴 Gap Down -5.5%-🟢 Bullish Trend
 premarket-TTWO-🚀 Gap Up +6.4%
 premarket-WBD-🔴 Bearish Trend
 premarket-WDC-🔥 Relative Volume 2.2x-🟢 Bullish Trend
+eod-CTSH-📉 Breakdown 20 giorni
