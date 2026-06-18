@@ -339,3 +339,37 @@ premarket-TTWO-🚀 Gap Up +6.4%
 premarket-WBD-🔴 Bearish Trend
 premarket-WDC-🔥 Relative Volume 2.2x-🟢 Bullish Trend
 eod-CTSH-📉 Breakdown 20 giorni
+eod-AMGN-🔥 Relative Volume 2.7x
+eod-ARM-🔥 Relative Volume 2.4x
+eod-ADSK-🔥 Relative Volume 2.7x
+eod-ADP-🔥 Relative Volume 2.1x
+eod-BKR-📉 Breakdown 20 giorni
+eod-BKNG-🔥 Relative Volume 2.3x
+eod-CDNS-🔥 Relative Volume 2.6x
+eod-CHTR-📉 Breakdown 20 giorni-🔥 Relative Volume 4.0x
+eod-CSCO-🔥 Relative Volume 2.0x
+eod-CTSH-📉 Breakdown 20 giorni-🔥 Relative Volume 4.9x-⚠️ Forte selloff -10.5%
+eod-CMCSA-📉 Breakdown 20 giorni
+eod-EA-🔥 Relative Volume 2.7x
+eod-FTNT-🔥 Relative Volume 2.0x
+eod-INSM-🔥 Relative Volume 3.7x
+eod-INTC-🚀 Breakout 20 giorni-🚀 Forte rally +10.6%
+eod-KLAC-🚀 Forte rally +8.7%
+eod-LIN-🔥 Relative Volume 2.0x
+eod-MRVL-🔥 Relative Volume 3.5x
+eod-MU-🚀 Forte rally +8.7%
+eod-MSTR-📉 Breakdown 20 giorni
+eod-MDLZ-🔥 Relative Volume 2.5x
+eod-MPWR-🔥 Relative Volume 2.3x
+eod-NFLX-🔥 Relative Volume 2.3x
+eod-ORLY-🔥 Relative Volume 2.0x
+eod-ROP-🔥 Relative Volume 3.1x
+eod-SNDK-🚀 Forte rally +11.5%
+eod-STX-🔥 Relative Volume 2.1x
+eod-TTWO-🔥 Relative Volume 2.2x
+eod-TXN-🔥 Relative Volume 2.1x
+eod-TRI-🔥 Relative Volume 3.2x
+eod-VRSK-🔥 Relative Volume 4.7x
+eod-WDC-🚀 Breakout 20 giorni
+eod-WDAY-📉 Breakdown 20 giorni
+eod-ZS-🔥 Relative Volume 2.1x
