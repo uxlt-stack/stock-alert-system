@@ -398,3 +398,5 @@ premarket-TXN-🔥 Relative Volume 2.1x
 premarket-TRI-🔥 Relative Volume 3.2x
 premarket-VRSK-🔥 Relative Volume 4.7x
 premarket-ZS-🔥 Relative Volume 2.1x
+eod-CHTR-🔥 Relative Volume 4.0x
+eod-CTSH-🔥 Relative Volume 4.9x
