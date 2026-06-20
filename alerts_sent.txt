@@ -400,3 +400,31 @@ premarket-VRSK-🔥 Relative Volume 4.7x
 premarket-ZS-🔥 Relative Volume 2.1x
 eod-CHTR-🔥 Relative Volume 4.0x
 eod-CTSH-🔥 Relative Volume 4.9x
+eod-AEP-🔥 Relative Volume 2.0x
+eod-ADI-🔥 Relative Volume 2.3x
+eod-ADP-🔥 Relative Volume 2.4x
+eod-BKR-📉 Breakdown 20 giorni-🔥 Relative Volume 2.3x
+eod-CHTR-📉 Breakdown 20 giorni-🔥 Relative Volume 5.0x
+eod-CTSH-📉 Breakdown 20 giorni-🔥 Relative Volume 5.1x-⚠️ Forte selloff -10.5%
+eod-CMCSA-📉 Breakdown 20 giorni-🔥 Relative Volume 2.3x
+eod-CPRT-🔥 Relative Volume 2.5x
+eod-EA-🔥 Relative Volume 2.8x
+eod-FTNT-🔥 Relative Volume 2.6x
+eod-INSM-🔥 Relative Volume 4.9x
+eod-KLAC-🔥 Relative Volume 2.0x-🚀 Forte rally +8.7%
+eod-LRCX-🔥 Relative Volume 2.0x
+eod-MDLZ-🔥 Relative Volume 2.9x
+eod-MNST-🔥 Relative Volume 2.2x
+eod-PAYX-🔥 Relative Volume 2.2x
+eod-PEP-🔥 Relative Volume 2.0x
+eod-QCOM-🔥 Relative Volume 2.1x
+eod-REGN-🔥 Relative Volume 2.2x
+eod-STX-🔥 Relative Volume 2.2x
+eod-TMUS-🔥 Relative Volume 2.3x
+eod-TTWO-🔥 Relative Volume 2.3x
+eod-TXN-🔥 Relative Volume 2.4x
+eod-TRI-🔥 Relative Volume 4.1x
+eod-VRSK-🔥 Relative Volume 6.1x
+eod-VRTX-🔥 Relative Volume 2.1x
+eod-WDC-🚀 Breakout 20 giorni-🔥 Relative Volume 2.1x
+eod-XEL-🔥 Relative Volume 2.2x
