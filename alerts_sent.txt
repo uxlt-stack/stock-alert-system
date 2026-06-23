@@ -428,3 +428,14 @@ eod-VRSK-🔥 Relative Volume 6.1x
 eod-VRTX-🔥 Relative Volume 2.1x
 eod-WDC-🚀 Breakout 20 giorni-🔥 Relative Volume 2.1x
 eod-XEL-🔥 Relative Volume 2.2x
+eod-ADI-⚠️ Forte selloff -8.7%
+eod-AMAT-⚠️ Forte selloff -8.4%
+eod-ARM-⚠️ Forte selloff -9.6%
+eod-KLAC-⚠️ Forte selloff -9.0%
+eod-LRCX-⚠️ Forte selloff -8.9%
+eod-MRVL-⚠️ Forte selloff -8.9%
+eod-MCHP-⚠️ Forte selloff -9.3%
+eod-MU-⚠️ Forte selloff -13.1%
+eod-SNDK-⚠️ Forte selloff -13.0%
+eod-TXN-⚠️ Forte selloff -8.6%
+eod-WDC-⚠️ Forte selloff -8.1%
