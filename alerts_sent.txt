@@ -439,3 +439,16 @@ eod-MU-⚠️ Forte selloff -13.1%
 eod-SNDK-⚠️ Forte selloff -13.0%
 eod-TXN-⚠️ Forte selloff -8.6%
 eod-WDC-⚠️ Forte selloff -8.1%
+eod-AEP-🚀 Breakout 20 giorni
+eod-ADI-⚠️ Forte selloff -8.6%
+eod-AMAT-⚠️ Forte selloff -8.5%
+eod-ARM-⚠️ Forte selloff -10.1%
+eod-KLAC-⚠️ Forte selloff -9.2%
+eod-LRCX-⚠️ Forte selloff -9.3%
+eod-MRVL-⚠️ Forte selloff -9.4%
+eod-MCHP-⚠️ Forte selloff -9.2%
+eod-MU-⚠️ Forte selloff -13.2%
+eod-QCOM-⚠️ Forte selloff -8.0%
+eod-SNDK-⚠️ Forte selloff -13.6%
+eod-TXN-⚠️ Forte selloff -8.4%
+eod-WDC-⚠️ Forte selloff -8.4%
