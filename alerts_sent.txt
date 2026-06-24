@@ -452,3 +452,4 @@ eod-QCOM-⚠️ Forte selloff -8.0%
 eod-SNDK-⚠️ Forte selloff -13.6%
 eod-TXN-⚠️ Forte selloff -8.4%
 eod-WDC-⚠️ Forte selloff -8.4%
+eod-BKNG-🚀 Forte rally +9.1%
