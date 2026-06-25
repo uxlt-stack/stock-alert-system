@@ -453,3 +453,6 @@ eod-SNDK-⚠️ Forte selloff -13.6%
 eod-TXN-⚠️ Forte selloff -8.4%
 eod-WDC-⚠️ Forte selloff -8.4%
 eod-BKNG-🚀 Forte rally +9.1%
+eod-BKNG-🚀 Breakout 20 giorni
+eod-MSTR-📉 Breakdown 20 giorni-⚠️ Forte selloff -9.4%
+eod-SHOP-🔥 Relative Volume 2.1x
