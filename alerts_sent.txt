@@ -467,3 +467,7 @@ eod-MU-🚀 Forte rally +15.7%
 eod-MSFT-📉 Breakdown 20 giorni
 eod-MSTR-📉 Breakdown 20 giorni-⚠️ Forte selloff -9.3%
 eod-SNDK-🚀 Forte rally +22.0%
+eod-APP-🚀 Forte rally +8.3%
+eod-SNDK-⚠️ Forte selloff -8.7%
+eod-STX-⚠️ Forte selloff -9.6%
+eod-WDC-⚠️ Forte selloff -13.6%
