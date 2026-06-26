@@ -471,3 +471,30 @@ eod-APP-🚀 Forte rally +8.3%
 eod-SNDK-⚠️ Forte selloff -8.7%
 eod-STX-⚠️ Forte selloff -9.6%
 eod-WDC-⚠️ Forte selloff -13.6%
+eod-GOOGL-🔥 Relative Volume 2.7x
+eod-GOOG-📉 Breakdown 20 giorni-🔥 Relative Volume 2.8x
+eod-AMZN-🔥 Relative Volume 4.0x
+eod-ADI-🔥 Relative Volume 2.2x
+eod-AAPL-🔥 Relative Volume 3.9x
+eod-AMAT-🔥 Relative Volume 2.3x
+eod-CSCO-📉 Breakdown 20 giorni
+eod-CPRT-🔥 Relative Volume 2.4x
+eod-COST-🔥 Relative Volume 2.0x
+eod-DDOG-🚀 Forte rally +8.5%
+eod-HON-🔥 Relative Volume 2.8x
+eod-KDP-🚀 Breakout 20 giorni-🔥 Relative Volume 3.2x
+eod-MCHP-🔥 Relative Volume 2.3x
+eod-MSFT-🔥 Relative Volume 3.6x
+eod-MPWR-📉 Breakdown 20 giorni-🔥 Relative Volume 3.1x-⚠️ Forte selloff -8.7%
+eod-MNST-🚀 Breakout 20 giorni-🔥 Relative Volume 2.1x
+eod-NXPI-📉 Breakdown 20 giorni
+eod-ORLY-🔥 Relative Volume 2.3x
+eod-ROST-📉 Breakdown 20 giorni-🔥 Relative Volume 2.3x
+eod-SNDK-⚠️ Forte selloff -10.5%
+eod-STX-🔥 Relative Volume 2.0x-⚠️ Forte selloff -12.2%
+eod-SBUX-🔥 Relative Volume 2.1x
+eod-TTWO-🔥 Relative Volume 2.0x
+eod-TXN-🔥 Relative Volume 2.7x-⚠️ Forte selloff -8.5%
+eod-VRTX-🚀 Breakout 20 giorni-🔥 Relative Volume 3.4x
+eod-WDC-🔥 Relative Volume 2.1x-⚠️ Forte selloff -13.2%
+eod-WDAY-🚀 Forte rally +9.2%
