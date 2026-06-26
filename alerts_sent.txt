@@ -460,3 +460,10 @@ eod-AMAT-🚀 Forte rally +11.4%
 eod-MU-🚀 Forte rally +15.2%
 eod-MSTR-📉 Breakdown 20 giorni-⚠️ Forte selloff -8.2%
 eod-SNDK-🚀 Forte rally +20.8%
+eod-AMZN-📉 Breakdown 20 giorni
+eod-AAPL-📉 Breakdown 20 giorni
+eod-AMAT-🚀 Breakout 20 giorni-🚀 Forte rally +13.4%
+eod-MU-🚀 Forte rally +15.7%
+eod-MSFT-📉 Breakdown 20 giorni
+eod-MSTR-📉 Breakdown 20 giorni-⚠️ Forte selloff -9.3%
+eod-SNDK-🚀 Forte rally +22.0%
