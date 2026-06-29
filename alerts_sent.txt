@@ -498,3 +498,13 @@ eod-TXN-🔥 Relative Volume 2.7x-⚠️ Forte selloff -8.5%
 eod-VRTX-🚀 Breakout 20 giorni-🔥 Relative Volume 3.4x
 eod-WDC-🔥 Relative Volume 2.1x-⚠️ Forte selloff -13.2%
 eod-WDAY-🚀 Forte rally +9.2%
+eod-AMAT-🚀 Forte rally +11.9%
+eod-ALAB-🚀 Forte rally +12.3%
+eod-AXON-🚀 Forte rally +10.0%
+eod-CMCSA-🔥 Relative Volume 2.0x
+eod-HON-⚠️ Forte selloff -49.2%
+eod-KLAC-🚀 Forte rally +9.4%
+eod-LRCX-🚀 Forte rally +8.5%
+eod-PANW-🚀 Forte rally +8.1%
+eod-RKLB-🚀 Forte rally +11.7%
+eod-WDC-🚀 Forte rally +8.9%
