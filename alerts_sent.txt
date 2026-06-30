@@ -524,3 +524,5 @@ eod-TSLA-🚀 Forte rally +8.5%
 eod-WDC-🚀 Forte rally +11.2%
 eod-ALAB-🚀 Forte rally +8.0%
 eod-NBIS-🚀 Forte rally +10.7%
+eod-KLAC-🚀 Forte rally +8.4%
+eod-SNDK-🚀 Forte rally +10.9%
