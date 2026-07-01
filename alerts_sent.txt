@@ -526,3 +526,16 @@ eod-ALAB-🚀 Forte rally +8.0%
 eod-NBIS-🚀 Forte rally +10.7%
 eod-KLAC-🚀 Forte rally +8.4%
 eod-SNDK-🚀 Forte rally +10.9%
+eod-APP-🚀 Forte rally +10.3%
+eod-AXON-🚀 Forte rally +8.5%
+eod-CRWV-⚠️ Forte selloff -13.6%
+eod-CRWD-🚀 Forte rally +10.1%
+eod-KLAC-⚠️ Forte selloff -9.6%
+eod-LRCX-⚠️ Forte selloff -9.2%
+eod-META-🚀 Forte rally +11.1%
+eod-MU-⚠️ Forte selloff -8.7%
+eod-MSTR-🚀 Forte rally +10.8%
+eod-NBIS-⚠️ Forte selloff -15.5%
+eod-PLTR-🚀 Forte rally +9.1%
+eod-SNDK-⚠️ Forte selloff -10.7%
+eod-TER-⚠️ Forte selloff -10.4%
