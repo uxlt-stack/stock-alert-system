@@ -539,3 +539,19 @@ eod-NBIS-⚠️ Forte selloff -15.5%
 eod-PLTR-🚀 Forte rally +9.1%
 eod-SNDK-⚠️ Forte selloff -10.7%
 eod-TER-⚠️ Forte selloff -10.4%
+eod-AMAT-⚠️ Forte selloff -10.0%
+eod-APP-🚀 Forte rally +9.6%
+eod-ALAB-⚠️ Forte selloff -10.8%
+eod-CEG-📉 Breakdown 20 giorni-🔥 Relative Volume 2.1x
+eod-CRWV-📉 Breakdown 20 giorni-⚠️ Forte selloff -13.9%
+eod-CRWD-🚀 Forte rally +10.2%
+eod-INTC-⚠️ Forte selloff -9.0%
+eod-KLAC-⚠️ Forte selloff -11.8%
+eod-LRCX-⚠️ Forte selloff -9.7%
+eod-MRVL-⚠️ Forte selloff -8.7%
+eod-META-🔥 Relative Volume 2.3x-🚀 Forte rally +8.8%
+eod-MU-⚠️ Forte selloff -10.6%
+eod-NBIS-⚠️ Forte selloff -17.0%
+eod-PDD-🚀 Forte rally +8.2%
+eod-SNDK-⚠️ Forte selloff -10.6%
+eod-TER-⚠️ Forte selloff -11.7%
