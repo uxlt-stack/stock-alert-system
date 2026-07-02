@@ -556,3 +556,10 @@ eod-PDD-🚀 Forte rally +8.2%
 eod-SNDK-⚠️ Forte selloff -10.6%
 eod-TER-⚠️ Forte selloff -11.7%
 eod-MSTR-🚀 Forte rally +8.1%
+eod-KLAC-⚠️ Forte selloff -11.5%
+eod-LRCX-⚠️ Forte selloff -10.2%
+eod-LITE-⚠️ Forte selloff -9.1%
+eod-SNDK-⚠️ Forte selloff -14.1%
+eod-STX-⚠️ Forte selloff -10.4%
+eod-TER-⚠️ Forte selloff -13.6%
+eod-WDC-⚠️ Forte selloff -9.9%
