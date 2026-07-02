@@ -555,3 +555,4 @@ eod-NBIS-⚠️ Forte selloff -17.0%
 eod-PDD-🚀 Forte rally +8.2%
 eod-SNDK-⚠️ Forte selloff -10.6%
 eod-TER-⚠️ Forte selloff -11.7%
+eod-MSTR-🚀 Forte rally +8.1%
