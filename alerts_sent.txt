@@ -563,3 +563,5 @@ eod-SNDK-⚠️ Forte selloff -14.1%
 eod-STX-⚠️ Forte selloff -10.4%
 eod-TER-⚠️ Forte selloff -13.6%
 eod-WDC-⚠️ Forte selloff -9.9%
+eod-AMD-🚀 Forte rally +9.5%
+eod-ALAB-🚀 Forte rally +8.8%
