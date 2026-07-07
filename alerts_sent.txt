@@ -576,3 +576,7 @@ eod-RKLB-⚠️ Forte selloff -9.1%
 eod-SNDK-⚠️ Forte selloff -10.3%
 eod-TER-⚠️ Forte selloff -12.4%
 eod-WDC-⚠️ Forte selloff -8.7%
+eod-ALAB-⚠️ Forte selloff -11.5%
+eod-NBIS-⚠️ Forte selloff -8.4%
+eod-RKLB-⚠️ Forte selloff -10.4%
+eod-TER-⚠️ Forte selloff -9.6%
