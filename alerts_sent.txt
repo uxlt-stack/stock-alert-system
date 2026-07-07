@@ -566,3 +566,13 @@ eod-WDC-⚠️ Forte selloff -9.9%
 eod-AMD-🚀 Forte rally +9.5%
 eod-ALAB-🚀 Forte rally +8.8%
 eod-ORLY-📉 Breakdown 20 giorni
+eod-AMD-⚠️ Forte selloff -8.1%
+eod-AMAT-⚠️ Forte selloff -9.6%
+eod-ALAB-⚠️ Forte selloff -13.1%
+eod-INTC-⚠️ Forte selloff -9.7%
+eod-LRCX-⚠️ Forte selloff -8.5%
+eod-MRVL-⚠️ Forte selloff -9.6%
+eod-RKLB-⚠️ Forte selloff -9.1%
+eod-SNDK-⚠️ Forte selloff -10.3%
+eod-TER-⚠️ Forte selloff -12.4%
+eod-WDC-⚠️ Forte selloff -8.7%
