@@ -580,3 +580,4 @@ eod-ALAB-⚠️ Forte selloff -11.5%
 eod-NBIS-⚠️ Forte selloff -8.4%
 eod-RKLB-⚠️ Forte selloff -10.4%
 eod-TER-⚠️ Forte selloff -9.6%
+eod-NBIS-🚀 Forte rally +8.4%
