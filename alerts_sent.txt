@@ -582,3 +582,7 @@ eod-RKLB-⚠️ Forte selloff -10.4%
 eod-TER-⚠️ Forte selloff -9.6%
 eod-NBIS-🚀 Forte rally +8.4%
 eod-NBIS-🚀 Forte rally +10.9%
+eod-ALNY-🚀 Breakout 20 giorni-🔥 Relative Volume 2.5x
+eod-ARM-🚀 Forte rally +11.1%
+eod-LITE-🚀 Forte rally +11.6%
+eod-SNDK-🚀 Forte rally +9.2%
